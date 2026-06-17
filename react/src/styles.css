@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+}
+
+.nav-link {
+    padding: 25px;
+
+    border-style: solid;
+    border-width: 5px;
+}
+
+.text {
+  margin-top: 0px;
+}
+
+h1.text {
+  padding-top: 25px;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.light .text {
+  color: #333333;
+}
+
+.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark .text {
+  color: #ffffff;
+}
