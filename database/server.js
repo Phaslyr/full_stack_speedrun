@@ -71,7 +71,7 @@ app.delete('/projects/:id', async (req, res) => {
 // This prevents SQL injection attacks where malicious users could insert
 // harmful SQL code through input fields and damage your database.
 app.get('/employees', function (req, res) {
-    const table = connection.query(
+    connection.query(
         "SELECT * FROM employees;", 
         function (err, rows) {
             if (err) return res.status(500).json({ error: err.message });
@@ -80,7 +80,7 @@ app.get('/employees', function (req, res) {
 });
 
 app.post('/employees', function (req, res) {
-    const user = connection.query(
+    connection.query(
         "INSERT INTO employees (name, position, salary) VALUES (?, ?, ?)", 
         [req.body.name, req.body.position, req.body.salary],
         function (err, result) {
@@ -91,7 +91,7 @@ app.post('/employees', function (req, res) {
 
 
 app.delete('/employees/:id', function (req, res) {
-    const user = connection.query(
+    onnection.query(
         "DELETE FROM employees WHERE id = ?", 
         [req.params.id],
         function (err) {
