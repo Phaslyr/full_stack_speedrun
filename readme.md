@@ -9,3 +9,4 @@ Post-Class Lesson Ideas:
 * Neo4j and Graph Database
 * Expo and Mobile Dev
 * Using AI APIs
+* Render, Netlify, Docker
